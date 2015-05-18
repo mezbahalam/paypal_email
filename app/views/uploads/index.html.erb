@@ -1,0 +1,47 @@
+<div class="index">
+  <h1>Shirt uploads</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>email</th>
+        <th>user full name</th>
+        <th>color</th>
+        <th>shirt name</th>
+        <th>inches</th>
+        <th>bane name</th>
+        <th>bandcamp url</th>
+        <th>stripe_customer_id</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @uploads.each do |upload| %>
+        <tr>
+          <td><%= upload.user_email %></td>
+          <td><%= upload.user_fullname %></td>
+          <td><%= upload.shirt_color %></td>
+          <td><%= upload.shirt_name %></td>
+          <td><%= upload.shirt_inches_from_top %></td>
+          <td><%= upload.band_name %></td>
+          <td><%= upload.bancamp_url %></td>
+          <td><%= upload.stripe_customer_id %></td>
+          <td><%= link_to "white", upload.cloud_1200_mockup %></td>
+          <td><%= link_to "dark", upload.cloud_1200_dark %></td>
+          <td><%= link_to "light", upload.cloud_1200_light %></td>
+
+          <td><%= link_to "medium mockup", upload.cloud_small_mockup %></td>
+          <td><%= link_to "large mockup", upload.cloud_big_mockup %></td>
+          <td><%= link_to "full source", upload.cloud_big %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Upload', new_upload_path %>
+</div>

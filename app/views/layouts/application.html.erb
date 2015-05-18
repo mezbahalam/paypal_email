@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ToneThreads</title>
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= tag :meta, :name => "stripe-key", :content => ENV["PUBLISHABLE_KEY"] %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://tonethreads.com/favicon.ico" rel="shortcut icon">
+
+</head>
+<body>
+  <div id="header">
+    <a href="/"><%=image_tag 'tonethreadslogo.png' %></a> <a class="learn" target="_blank" href="http://tonethreads.com/info"><i class="fa fa-info-circle"></i></a>
+  </div>
+  <%= yield %>
+  <footer>
+    © 2015 ToneThreads
+    <a href="http://tonethreads.com/about">About</a>
+    <a href="http://tonethreads.com/faq">FAQ</a>
+    <a href="http://tonethreads.com/privacy">Privacy</a>
+    <a href="http://tonethreads.com/terms">Terms</a>
+  </footer>
+</body>
+</html>
