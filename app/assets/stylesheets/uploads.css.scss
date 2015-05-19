@@ -1,23 +1,25 @@
 $turkoise: #40a7c5;
 $blackish: #292929;
 
+@import url('https://fonts.googleapis.com/css?family=Open Sans:light,lightitalic,normal,italic,bold,bolditalic|Ubuntu:light,lightitalic,normal,italic,bold,bolditalic|Open+Sans:light,lightitalic,normal,italic,bold,bolditalic');
+
 body{
   color:$blackish;
   margin:0;
   padding:0;
+  font-family: 'ubuntu', sans-serif;
 }
 *{
   outline: none;
 }
 
 #header{
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
   position:fixed;
-  height:48px;
-  background:lighten($blackish,8%);
+  height:3em;
+  background:rgba(255,255,255,0.8);
   right:0;top:0;left:0;
   z-index:10000000;
+  box-shadow: 0 0 0.15em 0 rgba(0,0,0,1);
   img{
     height:43px;
     margin-left:10px;
@@ -26,13 +28,12 @@ body{
   .learn{
     position:absolute;
     right:30px;
-    top:16px;
-    color:white;
+    top:7px;
+    color:#249fdc;
     text-decoration:none;
   }
 }
 .container{
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   width:1160px;
   margin:55px auto 0px;
   background:white;
@@ -87,7 +88,7 @@ body{
     background-repeat: no-repeat;
     background-position: center 0px;
     background-size: cover;
-    
+
 
   }
   &.color-blue{
@@ -337,7 +338,6 @@ input[type="submit"]{
 }
 
 .index{
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   padding-top:100px;
   text-align:center;
   table{
@@ -349,13 +349,24 @@ input[type="submit"]{
   }
 }
 
+.caption-info{
+  color: #606060;
+  a{
+    color:#249fdc;
+    text-decoration: none;
+  }
+}
+
 footer{
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-align:center;
   padding:20px 0px;
+  color:#606060;
+  font-size: 14px;
   a{
     display:inline-block;
     margin-left:8px;
+    color: #249fdc;
+    text-decoration: none;
   }
 }
 

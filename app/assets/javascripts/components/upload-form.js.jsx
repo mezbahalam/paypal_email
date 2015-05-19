@@ -121,6 +121,7 @@
     },
     handleSubmit: function(e){
       e.preventDefault();
+      var regx = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/igm;
       if(this.state.numberValid
         && this.state.cvcValid
         && this.state.yearValid
@@ -155,6 +156,9 @@
           this.setState({bandUrlValid:false})
         }
         if( this.state.email == ''){
+          this.setState({emailValid:false})
+        }
+        if(!regx.test(this.state.email)){
           this.setState({emailValid:false})
         }
         if( this.state.fullName == ''){
@@ -343,9 +347,9 @@
               <input placeholder="CVC" ref="cvc" className={"half-input "+cvcClass} onBlur={this.validateCVC} id="cvc" value={this.state.cvc} onChange={this.handleTyping}/>
             </div>
             <input type="submit" value="submit"/>
-            <p>You will only be charged when a fan buys your shirt on Bandcamp.
+            <div className="caption-info"><p>You will only be charged when a fan buys your shirt on Bandcamp.
                 By clicking Submit you confirm that you have read and agree with our <a target="_blank" href="http://tonethreads.com/terms">Terms of Service</a>.
-            </p>
+            </p></div>
           </div>
         </form>
       )
