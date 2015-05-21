@@ -31579,7 +31579,7 @@ module.exports = warning;
             ), 
             React.createElement("input", {type: "submit", value: "submit"}), 
             React.createElement("div", {className: "caption-info"}, React.createElement("p", null, "You will only be charged when a fan buys your shirt on Bandcamp." + ' ' +
-                "By clicking Submit you confirm that you have read and agree with our ", React.createElement("a", {target: "_blank", href: "http://tonethreads.com/terms"}, "Terms of Service"), "."
+                "By clicking Submit, you confirm that you have read and agree with our ", React.createElement("a", {target: "_blank", href: "http://tonethreads.com/terms"}, "Terms of Service"), "."
             ))
           )
         )

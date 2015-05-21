@@ -348,7 +348,7 @@
             </div>
             <input type="submit" value="submit"/>
             <div className="caption-info"><p>You will only be charged when a fan buys your shirt on Bandcamp.
-                By clicking Submit you confirm that you have read and agree with our <a target="_blank" href="http://tonethreads.com/terms">Terms of Service</a>.
+                By clicking Submit, you confirm that you have read and agree with our <a target="_blank" href="http://tonethreads.com/terms">Terms of Service</a>.
             </p></div>
           </div>
         </form>
