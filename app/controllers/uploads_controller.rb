@@ -58,7 +58,7 @@ class UploadsController < ApplicationController
     respond_to do |format|
       if @upload.save
         GeneralMailer.email(params[:email],
-        "Your T-Shirt Has Been Created!",
+        "<%= @upload.band_name %> - Your T-Shirt Has Been Created!",
         @upload).deliver
         format.html { redirect_to "/success/#{@upload.id}", mockup: @upload.cloud_small_mockup, notice: 'Upload was successfully created.' }
         format.json { render :show, status: :created, location: @upload }

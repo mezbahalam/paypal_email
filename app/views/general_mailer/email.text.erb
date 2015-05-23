@@ -1,45 +1,44 @@
 <h2>You're almost done!</h2>
 
-<p>Here is your t-shirt!</p>
+<p><b>Here is your t-shirt! Download the images and follow the steps below.</b></p><br>
 
 
-<p>Click <a href="<%= @upload.cloud_1200_mockup %>">here</a> to download white background graphic.</p>
+<p><b>Click <a href="<%= @upload.cloud_1200_mockup %>">here</a> to download your shirt with a WHITE background.</b></p>
 
-<p>Click <a href="<%= @upload.cloud_1200_light %>">here</a> to download light background graphic.</p>
+<p><br><b>Click <a href="<%= @upload.cloud_1200_light %>">here</a> to download your shirt with a LIGHT background.</b></p>
 
-<p>Click <a href="<%= @upload.cloud_1200_dark %>">here</a> to download dark background graphic.</p>
-
-<p>All 1200x900, perfect for Bandcamp</p>
+<p><b>Click <a href="<%= @upload.cloud_1200_dark %>">here</a> to download your shirt with a DARK background.</b></p>
 
 
 <h2>Add ToneThreads as a Fulfillment Partner on Bandcamp</h2>
-<p>You only need to do this once: If you've already added ToneThreads as a fulfillment partner, you can skip this step.</p>
+<p><b><i>You only need to do this once: If you've already added ToneThreads as a fulfillment partner, you can skip this step.</i></b></p>
 
 <ol>
-<li>Go here: <a href="http://<%= @upload.bancamp_url %>.bandcamp.com/merch_orders"><%= @upload.bancamp_url %>.bandcamp.com/merch_orders</a>
-<br>You can also access this page by going to your tools page in Bandcamp and clicking the Physical Orders > Manage physical orders Link.</li>
-<li>Click on "Click here to give a fulfillment partner access to this page" and enter in this email address: bandcamp@tonethreads.com</li>
-<li>Click "Email" and you're done!</li>
+<li><b>Go here: <a href="http://<%= @upload.bancamp_url %>.bandcamp.com/merch_orders"><%= @upload.bancamp_url %>.bandcamp.com/merch_orders</b></a>
+<br>You can also access this page by going to your tools page in Bandcamp and clicking the Physical Orders > Manage physical orders Link.</li><br>
+<li>Click on "Click here to give a fulfillment partner access to this page" and enter in this email address: <b>bandcamp@tonethreads.com</b></li><br>
+<li>Click <b>"Email"</b> and you're done!</li>
 </ol>
 
 <h2>Add Your T-Shirt to Bandcamp</h2>
-<p>Important: All dollar amounts are in USD</p>
+<p><b><i>Important: All dollar amounts are in USD</i></b></p>
 
 <ol>
-<li>Click the "add merch" link in the header in your Bandcamp account. If this is the first time you’ve added merch, you’ll be asked to set your country and tax settings. ToneThreads includes taxes in our costs but if you want to charge additional taxes, that’s up to you. You'll also have to enter in shipping info and a return policy. For this info, go <a href="http://tonethreads.com/shipping-returns">here</a>. (You can just link to this page from bandcamp if you like.)</li>
-<li>Select T-shirt/Apparel.</li>
-<li>Enter in the exact same title you gave your t-shirt when you created it on ToneThreads: <%= @upload.shirt_name %></li>
-<li>Add something catchy for the description.</li>
-<li>Download the preview images in this email and upload as many of them as you like to Bandcamp.</li>
-<li>Set the price. ToneThreads will charge you $12 plus an additional $2 for XXL and XXXL sizes. Anything above this is yours to keep.  We recommend you check the "let fans pay more if they want" box and let your fans show some love.</li>
-<li>Orders will be shipped within 7 days of being placed. Shipping will cost $5 for US and $8 for the rest of the world. Additional shirts in the same order will cost an extra $2 for the US and $3 for international orders.</li>
-<li>You can leave the quantity field empty unless you want this to be a limited edition tee, then enter in how many you want to sell.</li>
-<li>Set up the t-shirt size options: Unisex S, M, L, XL, 2XL, 3XL and Women's S, M, L, XL are available. Click <a href="http://tonethreads.com/sizes">here</a> for more info on sizes.</li>
-<li>Include a digital download with your shirt - We highly recommend you do this.</li>
+<li><b>Click the "add merch" link in the header in your Bandcamp account.</b><br>If this is the first time you've added merch, you'll be asked to set your country and tax settings. ToneThreads includes taxes in our costs but if you want to charge additional taxes, that's up to you. You'll also have to enter in shipping info and a return policy. For this info, go <a href="http://tonethreads.com/shipping-returns">here</a>. (You can just link to this page from bandcamp if you like.)</li><br>
+<li>Select T-shirt/Apparel.</li><br>
+<li>Enter in the same title you gave your t-shirt on ToneThreads: <b><%= @upload.shirt_name %></b></li><br>
+<li>Add something catchy for the description.</li><br>
+<li><b>Download the preview images in this email and upload as many of them as you like to Bandcamp.</b></li><br>
+<li>Set the price. <b>ToneThreads will charge you $12 plus an additional $2 for 2XL and 3XL sizes.</b> Anything above this is yours to keep.  We recommend you check the "let fans pay more if they want" box and let your fans show some love.</li><br>
+<li><b>Orders will be shipped within 7 days of being placed. Shipping will cost $5 for US and $8 for the rest of the world. Additional shirts in the same order will cost an extra $2 for the US and $3 for international orders.</b></li><br>
+<li>You can leave the quantity field empty unless you want this to be a limited edition tee, then enter in how many you want to sell.</li><br>
+<li><b>Set up the t-shirt size options: Unisex S, M, L, XL, 2XL, 3XL and Women's S, M, L, XL are available.</b> You can sell any combination of these sizes as you like. Click <a href="http://tonethreads.com/sizes">here</a> for more info on sizes.</li><br>
+<li>Include a digital download with your shirt - We highly recommend you do this.</li><br>
 <li>Save your new t-shirt. Double check that everything looks good and when you're ready, make it public.
 <br>Your T-Shirt URL on Bandcamp should be: <a href="http://<%= @upload.bancamp_url %>.bandcamp.com/merch/<%= @upload.shirt_name.downcase.gsub(" ","-") %>"><%= @upload.bancamp_url %>.bandcamp.com/merch/<%= @upload.shirt_name.downcase.gsub(" ","-") %></a></li>
-</ol>
+</ol><br>
 
 
 <p>If you have any questions, just reply to this email.</p>
-<center><img src="https://tonethreads.com/tonethreads_logo_blue.png"></center>
+
+
