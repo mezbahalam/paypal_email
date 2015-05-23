@@ -29,16 +29,18 @@
 <li>Enter in the same title you gave your t-shirt on ToneThreads: <b><%= @upload.shirt_name %></b></li><br>
 <li>Add something catchy for the description.</li><br>
 <li><b>Download the preview images in this email and upload as many of them as you like to Bandcamp.</b></li><br>
-<li>Set the price. <b>ToneThreads will charge you $12 plus an additional $2 for 2XL and 3XL sizes.</b> Anything above this is yours to keep.  We recommend you check the "let fans pay more if they want" box and let your fans show some love.</li><br>
+<li><b>Set the price of your shirt. ToneThreads will charge you $12 plus an additional $2 for 2XL and 3XL sizes.</b> Anything above this is yours to keep. You will only be charged once you’ve been paid by your fans on Bandcamp.
+</li><br>
 <li><b>Orders will be shipped within 7 days of being placed. Shipping will cost $5 for US and $8 for the rest of the world. Additional shirts in the same order will cost an extra $2 for the US and $3 for international orders.</b></li><br>
 <li>You can leave the quantity field empty unless you want this to be a limited edition tee, then enter in how many you want to sell.</li><br>
 <li><b>Set up the t-shirt size options: Unisex S, M, L, XL, 2XL, 3XL and Women's S, M, L, XL are available.</b> You can sell any combination of these sizes as you like. Click <a href="http://tonethreads.com/sizes">here</a> for more info on sizes.</li><br>
 <li>Include a digital download with your shirt - We highly recommend you do this.</li><br>
-<li>Save your new t-shirt. Double check that everything looks good and when you're ready, make it public.
+<li><b>Save your new t-shirt.</b>Double check that everything looks good and when you're ready, make it public.
 <br>Your T-Shirt URL on Bandcamp should be: <a href="http://<%= @upload.bancamp_url %>.bandcamp.com/merch/<%= @upload.shirt_name.downcase.gsub(" ","-") %>"><%= @upload.bancamp_url %>.bandcamp.com/merch/<%= @upload.shirt_name.downcase.gsub(" ","-") %></a></li>
 </ol><br>
 
 
-<p>If you have any questions, just reply to this email.</p>
+
+<p>If you have any questions, <a href="http://tonethreads.com/faq">visit our FAQ</a> or just reply to this email.</p>
 <center><img src="https://tonethreads.com/tonethreads_logo_blue.png"></center>
 
