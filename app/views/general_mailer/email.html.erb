@@ -21,11 +21,11 @@
 </ol>
 
 <h2>Add Your T-Shirt to Bandcamp</h2>
-<p><b><i>Important: All dollar amounts are in USD</i></b></p>
+<p><b><i>Important: All dollar amounts are in USD.</b> You can charge fans in your currency on Bandcamp if you like. <a href="https://tonethreads.com/faq#cx">Here</a> is a handy little currency converter for you to use.</i></p>
 
 <ol>
 <li><b>Click the "add merch" link in the header in your Bandcamp account.</b><br>If this is the first time you've added merch, you'll be asked to set your country and tax settings. ToneThreads includes taxes in our costs but if you want to charge additional taxes, that's up to you. You'll also have to enter in shipping info and a return policy. For this info, go <a href="http://tonethreads.com/shipping-returns">here</a>. (You can just link to this page from bandcamp if you like.)</li><br>
-<li>Select T-shirt/Apparel.</li><br>
+<li>Select T-Shirt/Apparel.</li><br>
 <li>Enter in the same title you gave your t-shirt on ToneThreads: <b><%= @upload.shirt_name %></b></li><br>
 <li>Add something catchy for the description.</li><br>
 <li><b>Download the preview images in this email and upload as many of them as you like to Bandcamp.</b></li><br>
@@ -33,9 +33,9 @@
 </li><br>
 <li><b>Orders will be shipped within 7 days of being placed. Shipping will cost $5 for US and $8 for the rest of the world. Additional shirts in the same order will cost an extra $2 for the US and $3 for international orders.</b></li><br>
 <li>You can leave the quantity field empty unless you want this to be a limited edition tee, then enter in how many you want to sell.</li><br>
-<li><b>Set up the t-shirt size options: Unisex S, M, L, XL, 2XL, 3XL and Women's S, M, L, XL are available.</b> You can sell any combination of these sizes as you like. Click <a href="http://tonethreads.com/sizes">here</a> for more info on sizes.</li><br>
+<li><b>Set up the t-shirt size options: Unisex S, M, L, XL, 2XL, 3XL and Women's S, M, L, XL are available.</b> You can sell any combination of these sizes that you like. Click <a href="http://tonethreads.com/sizes">here</a> for more info on sizes.</li><br>
 <li>Include a digital download with your shirt - We highly recommend you do this.</li><br>
-<li><b>Save your new t-shirt.</b>Double check that everything looks good and when you're ready, make it public.
+<li><b>Save your new t-shirt. </b>Double check that everything looks good and when you're ready, make it public.
 <br>Your T-Shirt URL on Bandcamp should be: <a href="http://<%= @upload.bancamp_url %>.bandcamp.com/merch/<%= @upload.shirt_name.downcase.gsub(" ","-") %>"><%= @upload.bancamp_url %>.bandcamp.com/merch/<%= @upload.shirt_name.downcase.gsub(" ","-") %></a></li>
 </ol><br>
 
