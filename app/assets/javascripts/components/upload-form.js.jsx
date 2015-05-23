@@ -367,7 +367,7 @@
       var loader;
       if (this.state.submitting){
         loader = <div className="loader">
-          <img alt="Loading" className="loader-image" src="http://www.threddit.clothing/assets/loading-d0df7f4e35df4273f32a597238bb9678.gif" />
+          <img alt="Loading" className="loader-image" src="https://tonethreads.com/images/loading-d0df7f4e35df4273f32a597238bb9678.gif" />
           <div className="on-call-loader-text">loading
           </div>
         </div>
