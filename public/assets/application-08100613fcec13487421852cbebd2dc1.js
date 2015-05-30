@@ -31577,7 +31577,7 @@ module.exports = warning;
               React.createElement("input", {placeholder: "YY", ref: "year", className: "quarter-input "+yearClass, onBlur: this.validateYear, id: "year", value: this.state.year, onChange: this.handleTyping}), 
               React.createElement("input", {placeholder: "CVC", ref: "cvc", className: "half-input "+cvcClass, onBlur: this.validateCVC, id: "cvc", value: this.state.cvc, onChange: this.handleTyping})
             ), 
-            React.createElement("input", {type: "submit", value: "submit"}), 
+            React.createElement("input", {type: "submit", value: "Submit"}), 
             React.createElement("div", {className: "caption-info"}, React.createElement("p", null, "You will only be charged when a fan buys your shirt on Bandcamp." + ' ' +
                 "By clicking Submit, you confirm that you have read and agree with our ", React.createElement("a", {target: "_blank", href: "http://tonethreads.com/terms"}, "Terms of Service"), "."
             ))
