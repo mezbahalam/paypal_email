@@ -381,10 +381,10 @@ input.valid {
 /* line 325, /home/hendri/Dropbox/tonethreads/app/assets/stylesheets/uploads.css.scss */
 input[type="submit"] {
   background: white;
-  border: 6px solid #249fdc;
+  border: 4px solid #249fdc;
   color: #249fdc;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: normal;
   padding: 20px;
   cursor: pointer;
   width: 86%;
