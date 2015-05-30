@@ -1,4 +1,4 @@
-$turkoise: #40a7c5;
+$turkoise: #249fdc;
 $blackish: #292929;
 
 @import url('https://fonts.googleapis.com/css?family=Open Sans:light,lightitalic,normal,italic,bold,bolditalic|Ubuntu:light,lightitalic,normal,italic,bold,bolditalic|Open+Sans:light,lightitalic,normal,italic,bold,bolditalic');
@@ -322,12 +322,12 @@ input{
 
 }
 
-input[type="submit"]{
+input[type=“Submit"]{
   background:white;
-  border:6px solid $turkoise;
-  color:#40a7c5;
+  border:1px solid $turkoise;
+  color:##249fdc;
   font-size:40px;
-  font-weight:bold;
+  font-weight:normal;
   padding:20px;
   cursor:pointer;
   width:86%;
