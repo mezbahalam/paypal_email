@@ -322,12 +322,12 @@ input{
 
 }
 
-input[type=“Submit"]{
+input[type="submit"]{
   background:white;
   border:4px solid $turkoise;
-  color:##249fdc;
+  color:#249fdc;
   font-size:40px;
-  font-weight:normal;
+  font-weight:bold;
   padding:20px;
   cursor:pointer;
   width:86%;
