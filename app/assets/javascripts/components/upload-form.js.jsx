@@ -121,7 +121,9 @@
     },
     handleSubmit: function(e){
       e.preventDefault();
-      var regx = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/igm;
+      var regx_email = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/igm;
+      var regx_url =  /^[a-zA-Z0-9-_s]*$/;
+      var regx_title =  /^[a-zA-Z0-9 _-_s]*$/;
       if(this.state.numberValid
         && this.state.cvcValid
         && this.state.yearValid
@@ -130,7 +132,10 @@
         && this.state.email != ''
         && this.state.fullName != ''
         && this.state.shirtName != ''
-        && this.state.image != null){
+        && this.state.image != null
+        && regx_title.test(this.state.shirtName)
+        && regx_email.test(this.state.email)
+        && regx_url.test(this.state.bandcampUrl)){
         this.props.onSubmit(true);
         Stripe.card.createToken({
           number: React.findDOMNode(this.refs.cc_number).value.trim(),
@@ -155,10 +160,13 @@
         if( this.state.bandcampUrl == ''){
           this.setState({bandUrlValid:false})
         }
+        if( !regx_url.test(this.state.bandcampUrl)){
+          this.setState({bandUrlValid:false})
+        }
         if( this.state.email == ''){
           this.setState({emailValid:false})
         }
-        if(!regx.test(this.state.email)){
+        if(!regx_email.test(this.state.email)){
           this.setState({emailValid:false})
         }
         if( this.state.fullName == ''){
@@ -167,12 +175,12 @@
         if( this.state.shirtName == ''){
           this.setState({shirtNameValid:false})
         }
-
+        if(!regx_title.test(this.state.shirtName)){
+          this.setState({shirtNameValid:false})
+        }
         if( this.state.image == null){
           this.setState({imageValid:false})
         }
-
-
       }
 
     },
@@ -265,6 +273,7 @@
       var fullNameClass='';
       var cardDiv;
       var shirtNameClass='';
+      var divStyle = {display: "none"};
       if(state.numberValid == false){
         numberClass = "invalid"
       }
@@ -279,6 +288,9 @@
       }
       if(state.bandUrlValid == false){
         bandUrlClass = "invalid"
+        $(".invalid-text-url").show()
+      }else{
+        $(".invalid-text-url").hide();
       }
       if(state.emailValid == false){
         emailClass = "invalid"
@@ -288,8 +300,10 @@
       }
       if(state.shirtNameValid == false){
         shirtNameClass = "invalid"
+        $(".invalid-text-title").show()
+      }else{
+        $(".invalid-text-title").hide();
       }
-
 
       if(state.numberValid == false){
         numberClass = "invalid"
@@ -333,9 +347,11 @@
             <input type="hidden" name="inches" value={this.state.inches}/>
             <input type="hidden" name="color" value={this.state.color}/>
             <input type="hidden" name="stripeToken" value={this.state.stripeToken} />
+            <div className="invalid-text-url" style={divStyle}><sup>Only letters, numbers, dashes & spaces</sup></div>
             <input type="text" className={shirtNameClass} name="shirt_name" placeholder="T-Shirt Title" onChange={this.handleTyping} ref="shirtName" id="shirtName" value={this.state.shirtName}/>
             <input type="text" className={bandNameClass} name="band_name" placeholder="Artist / Band Name" onChange={this.handleTyping} ref="name" id="name" value={this.state.bandName}/>
             <input type="text" className={bandUrlClass+" halfplus-input"} name="bancamp_url" placeholder="Bandcamp URL" onChange={this.handleTyping} id="url" value={this.state.bandcampUrl} /> <span className="bigg">.bandcamp.com</span>
+            <div className="invalid-text-url" style={divStyle}><sup>Only letters, numbers & dashes. No http://</sup></div>
             <input type="text" className={emailClass} name="email" placeholder="Email" onChange={this.handleTyping} id="email" value={this.state.email} />
             <hr/>
             <input type="text"  className={fullNameClass} name="full_name" placeholder="Full Name" ref="full_name" value={this.state.fullName}  id="fullName" onChange={this.handleTyping}/>
