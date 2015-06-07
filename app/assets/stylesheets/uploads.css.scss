@@ -1,8 +1,7 @@
-@charset 'UTF-8';
-@import url('https://fonts.googleapis.com/css?family=Open Sans:light,lightitalic,normal,italic,bold,bolditalic|Ubuntu:light,lightitalic,normal,italic,bold,bolditalic|Open+Sans:light,lightitalic,normal,italic,bold,bolditalic');
-
 $turkoise: #249fdc
 $blackish: #292929;
+
+@import url('https://fonts.googleapis.com/css?family=Open Sans:light,lightitalic,normal,italic,bold,bolditalic|Ubuntu:light,lightitalic,normal,italic,bold,bolditalic|Open+Sans:light,lightitalic,normal,italic,bold,bolditalic');
 
 body{
   color:$blackish;
@@ -320,22 +319,6 @@ input{
 .eighty{
   width:100%;
   margin:auto;
-
-.invalid-text-title{
-  color: #ff003f;
-  font-size: 15px;
-  position: absolute;
-  top: -14px;
-  margin-left: 38px;
-}
-
-.invalid-text-url{
-  color: #ff003f;
-  font-size: 15px;
-  position: absolute;
-  top: 176px;
-  margin-left: 42px;
-}
 
 }
 
