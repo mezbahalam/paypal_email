@@ -10,7 +10,13 @@
       </ul>
     </div>
   <% end %>
-
+  <div class="field">
+    <%= f.label :paypal_email %><br />
+    <%= f.label :paypal_email, "Yes", :value => "true"  %>
+    <%= f.radio_button :paypal_email, true %>
+    <%= f.label :credit_card, "No", :value => "false" %>
+    <%= f.radio_button :paypal_email, false, :checked => true %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -41,6 +41,8 @@ class UploadsController < ApplicationController
     @upload.bancamp_url = params[:bancamp_url]
     @upload.user_email = params[:email]
     @upload.user_fullname = params[:full_name]
+    @upload.paypal_email = params[:paypal_email]
+    
 
 
 

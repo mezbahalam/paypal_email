@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150412190010) do
+ActiveRecord::Schema.define(version: 20150607045014) do
 
   create_table "uploads", force: true do |t|
     t.string   "shirt_color"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20150412190010) do
     t.string   "stripe_customer_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "paypal_email"
   end
 
 end
